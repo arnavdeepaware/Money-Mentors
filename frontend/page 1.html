@@ -43,17 +43,45 @@
             transition: width 0.5s ease-in-out;
         }
         .question {
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 20px;
         }
         .choices {
             display: grid;
+            font-size: medium;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
+        }
+        .next {
+            position: fixed;
+            left: 60%;
+            bottom: 18%;
+            transform: translateX(-50%);
+            font-size: larger;
+            background-color: #f0f0f0;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .home {
+            position: fixed;
+            left: 40%;
+            bottom: 18%;
+            transform: translateX(-50%);
+            font-size: larger;
+            background-color: #f0f0f0;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
         .choice {
             background-color: #f0f0f0;
             border: none;
+            font-size: medium;
             padding: 15px;
             border-radius: 10px;
             cursor: pointer;
@@ -86,6 +114,8 @@
             <button class="choice" onclick="checkAnswer('D')">D. Smoking</button>
         </div>
         <div id="feedback"></div>
+        <button class="next" name="Continue" type="button" onclick="continue()"style="background-color:white;"> Continue</button>
+        <button class="home" name="Home" type="button" onclick="home()"style="background-color:white;"> Home</button>
     </div>
     </div>
 
@@ -100,6 +130,16 @@
                 document.getElementById('feedback').textContent = 'Wrong answer, try again.';
                 document.getElementById('feedback').style.color = '#ff4757';
             }
+        }
+    </script>
+    <script>
+        function goToNextPage() {
+        window.location.href = 'next-page.html';
+        }
+    </script>
+    <script>
+        function home() {
+        window.location.href = 'home-page.html';
         }
     </script>
 </body>
