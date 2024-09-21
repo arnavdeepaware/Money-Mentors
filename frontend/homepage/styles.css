@@ -1,0 +1,146 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #E0E0E0;; /* Light, playful background */
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#005BEA ;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #00C6FB;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #005BEA ;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #005BEA ;
+}
+
+/* Modules Section */
+.modules-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.modules-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.module-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.module-card h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.module-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.module-btn {
+  padding: 10px;
+  background-color: #005BEA ;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.module-btn:hover {
+  background-color: #005BEA;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .modules-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+}
+
