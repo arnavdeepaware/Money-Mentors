@@ -4,101 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoneyMentors</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #00c6fb 0%, #005bea 100%);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #333;
-        }
-        .container {
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 20px;
-            padding: 40px;
-            width: 80%;
-            max-width: 600px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #005bea;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .progress-bar {
-            background-color: #e0e0e0;
-            height: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-        }
-        .progress {
-            background-color: #00c6fb;
-            height: 100%;
-            border-radius: 10px;
-            width: 25%;
-            transition: width 0.5s ease-in-out;
-        }
-        .question {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        .choices {
-            display: grid;
-            font-size: medium;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-        .next {
-            position: fixed;
-            left: 60%;
-            bottom: 18%;
-            transform: translateX(-50%);
-            font-size: larger;
-            background-color: #f0f0f0;
-            border: none;
-            padding: 15px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .home {
-            position: fixed;
-            left: 40%;
-            bottom: 18%;
-            transform: translateX(-50%);
-            font-size: larger;
-            background-color: #f0f0f0;
-            border: none;
-            padding: 15px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .choice {
-            background-color: #f0f0f0;
-            border: none;
-            font-size: medium;
-            padding: 15px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .choice:hover {
-            background-color: #e0e0e0;
-        }
-        #feedback {
-            margin-top: 20px;
-            text-align: center;
-            font-weight: bold;
-            color: #ff4757;
-        }
-    </style>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
+
+    
     <div class="container">
         <h1>MoneyMentors</h1>
         <div class="progress-bar">
@@ -113,34 +23,22 @@
             <button class="choice" onclick="checkAnswer('C')">C. No college degree</button>
             <button class="choice" onclick="checkAnswer('D')">D. Smoking</button>
         </div>
-        <div id="feedback"></div>
-        <button class="next" name="Continue" type="button" onclick="continue()"style="background-color:white;"> Continue</button>
-        <button class="home" name="Home" type="button" onclick="home()"style="background-color:white;"> Home</button>
-    </div>
     </div>
 
+    <div class="buttons">
+        <button class="home" id="home-btn" type="button" > Home</button>
+        <button class="next" id="next-btn" type="button"> Next</button>
+    </div>
 
+    <script src = "script.js"></script>
+    <div id="navbar"></div>
     <script>
-        function checkAnswer(choice) {
-            if (choice === 'B') {
-                document.getElementById('feedback').textContent = 'Correct!';
-                document.getElementById('feedback').style.color = '#4CAF50';
-                document.querySelector('.progress').style.width = '50%';
-            } else {
-                document.getElementById('feedback').textContent = 'Wrong answer, try again.';
-                document.getElementById('feedback').style.color = '#ff4757';
-            }
-        }
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
     </script>
-    <script>
-        function goToNextPage() {
-        window.location.href = 'next-page.html';
-        }
-    </script>
-    <script>
-        function home() {
-        window.location.href = 'home-page.html';
-        }
-    </script>
+
 </body>
 </html>
