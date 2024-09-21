@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f4f9ff; /* Light, playful background */
+  background-color: #E0E0E0;; /* Light, playful background */
   color: #333;
 }
 
@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #58CC02; /* Duolingo Green */
+  background-color:#005BEA ;
   padding: 1rem 2rem;
   color: white;
 }
@@ -48,7 +48,7 @@ body {
 .hero {
   text-align: center;
   padding: 2rem;
-  background-color: #FFEC99; /* Duolingo-like playful yellow */
+  background-color: #00C6FB;
   margin-bottom: 2rem;
 }
 
@@ -65,7 +65,7 @@ body {
 
 .cta-button {
   padding: 10px 20px;
-  background-color: #58CC02; /* Green CTA button */
+  background-color: #005BEA ;
   color: white;
   border: none;
   border-radius: 25px;
@@ -75,7 +75,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #45a702;
+  background-color: #005BEA ;
 }
 
 /* Modules Section */
@@ -117,7 +117,7 @@ body {
 
 .module-btn {
   padding: 10px;
-  background-color: #58CC02;
+  background-color: #005BEA ;
   color: white;
   border: none;
   border-radius: 25px;
@@ -125,7 +125,7 @@ body {
 }
 
 .module-btn:hover {
-  background-color: #45a702;
+  background-color: #005BEA;
 }
 
 /* Responsive Design */
@@ -143,3 +143,4 @@ body {
     grid-template-columns: 1fr; /* Single column for mobile */
   }
 }
+
