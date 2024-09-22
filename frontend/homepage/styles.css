@@ -139,6 +139,17 @@ body {
     font-size: 28px;
   }
 
+  .about {
+    margin-bottom: 40px; 
+    border-spacing: 15px 50px; 
+  }
+
+  .our-long-term {
+    margin-top: 40px; 
+    border-spacing: 15px 50px; 
+
+  }
+  
   .modules-grid {
     grid-template-columns: 1fr; /* Single column for mobile */
   }
