@@ -140,14 +140,13 @@ body {
   }
 
   .about {
-    margin-bottom: 40px; 
-    border-spacing: 15px 50px; 
+    margin-bottom: 50px; 
+    align-items: center;
+    
   }
 
-  .our-long-term {
-    margin-top: 40px; 
-    border-spacing: 15px 50px; 
-
+  .our-long-term { 
+    align-items: center;
   }
   
   .modules-grid {
