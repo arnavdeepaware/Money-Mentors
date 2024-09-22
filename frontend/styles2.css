@@ -10,15 +10,21 @@ body {
     color: #333;
     flex-direction: column; /* Adjusts the layout to stack elements vertically */
 }
-
 /* Navigation Bar */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    position: fixed;
+    margin-left: auto;
     align-items: center;
+    top: 0; 
+    left: 0;
+    width: 96%;
+    justify-content: space-between;
     background-color:#005BEA ;
     padding: 1rem 2rem;
     color: white;
+    z-index: 9999;
+    margin: 0;
   }
 
   
