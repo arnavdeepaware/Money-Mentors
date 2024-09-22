@@ -1,5 +1,5 @@
 ## Inspiration
-###Reimagining Credit Worthiness: A Path to Financial Empowerment
+### Reimagining Credit Worthiness: A Path to Financial Empowerment
 In the world of finance, credit scores have long reigned supreme as the gatekeepers of borrowing potential. Yet, this system, dominated by FICO scores, often falls short in truly capturing an individual's financial reliability. Many consumers find themselves navigating a complex landscape they barely understand, where seemingly minor factors can have outsized impacts on their financial futures.
 ###The FICO Dilemma
 The current credit scoring system, while widely used, is far from perfect. It can unfairly penalize individuals based on factors beyond their immediate control, such as:
