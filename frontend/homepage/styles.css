@@ -9,8 +9,9 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #E0E0E0;; /* Light, playful background */
+  background-color: #f4f6f9; /* Soft background color for a professional feel */
   color: #333;
+  line-height: 1.6;
 }
 
 /* Navigation Bar */
@@ -18,139 +19,158 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#005BEA ;
-  padding: 1rem 2rem;
+  background-color: #005bea;
+  padding: 1.5rem 3rem;
   color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 .navbar .logo {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
 }
 
 .navbar .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .navbar .nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .navbar .nav-links li a:hover {
-  text-decoration: underline;
+  color: #f4f6f9; /* Lighten on hover for interaction */
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 2rem;
-  background-color: #00C6FB;
-  margin-bottom: 2rem;
+  padding: 4rem 1.5rem;
+  background-color: #00c6fb; /* Gradient background for a modern look */
+  background: linear-gradient(135deg, #00c6fb, #005bea);
+  color: white;
 }
 
 .hero h1 {
-  font-size: 36px;
-  color: #333;
+  font-size: 48px;
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 18px;
-  color: #666;
+  font-size: 22px;
+  font-weight: 400;
 }
 
-.cta-button {
-  padding: 10px 20px;
-  background-color: #005BEA ;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 18px;
-  cursor: pointer;
-  margin-top: 1rem;
+/* About Section */
+.about-section {
+  background-color: white;
+  padding: 3rem 2rem;
+  color: #333;
 }
 
-.cta-button:hover {
-  background-color: #005BEA ;
+.about-section h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #005bea;
+}
+
+.about {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.our-long-term {
+  text-align: center;
 }
 
 /* Modules Section */
 .modules-section {
+  background-color: #f4f6f9;
+  padding: 3rem 2rem;
   text-align: center;
-  padding: 2rem;
 }
 
 .modules-section h2 {
-  font-size: 28px;
-  color: #333;
+  font-size: 32px;
+  color: #005bea;
   margin-bottom: 2rem;
 }
 
 .modules-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .module-card {
   background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.module-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .module-card h3 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 1rem;
+  color: #333;
 }
 
 .module-card p {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 1rem;
+  font-size: 16px;
+  margin-bottom: 2rem;
 }
 
 .module-btn {
-  padding: 10px;
-  background-color: #005BEA ;
+  padding: 12px 24px;
+  background-color: #005bea;
   color: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .module-btn:hover {
-  background-color: #005BEA;
+  background-color: #0046b5;
+  transform: scale(1.05); /* Button grows slightly on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
   .navbar .nav-links {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
 
   .hero h1 {
-    font-size: 28px;
+    font-size: 36px;
   }
 
-  .about {
-    margin-bottom: 50px; 
-    align-items: center;
-    
+  .hero p {
+    font-size: 18px;
   }
 
-  .our-long-term { 
-    align-items: center;
-  }
-  
   .modules-grid {
-    grid-template-columns: 1fr; /* Single column for mobile */
+    grid-template-columns: 1fr;
   }
 }
-
