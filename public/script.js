@@ -67,7 +67,7 @@ function endQuiz() {
 
 // Add event listeners for buttons
 document.getElementById('home-btn').onclick = function() {
-    window.location.href = '../frontend/homepage/homepage.html'; // Redirect to homepage
+    window.location.href = 'index.html'; // Redirect to homepage
 };
 
 document.getElementById('next-btn').onclick = function() {

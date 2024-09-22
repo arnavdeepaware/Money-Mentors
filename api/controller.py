@@ -9,5 +9,5 @@ data = {
 }
 
 # Write the arrays to a JSON file
-with open('data.json', 'w') as json_file:
+with open('public\data.json', 'w') as json_file:
     json.dump(data, json_file)
